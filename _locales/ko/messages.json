@@ -2,7 +2,7 @@
   "page_title": {"message": "History with thumbnails - 1click extentions" },
   "h1_title": {"message": "History with thumbnails" },
   "browser_action": {"message": "Open history" },
-  "ext_desc": {"message": "See your history with thumbnails of the page you visited" },
+  "ext_desc": {"message": "Watch your history with thumbnails of the page you visited" },
   "ext_name": {"message": "1click History with thumbnails" }
 }
 
