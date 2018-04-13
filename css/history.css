@@ -1,0 +1,19 @@
+a.link {
+    display: inline-block;
+    width: 31%;
+    border: 2px solid lightgray;
+    padding: 7px;
+    border-radius: 6px;
+    margin: 0 10px;
+}
+a.link img{
+    max-width: 100%;
+    height:auto;
+}
+
+.title {
+    font-size: 14px;
+    padding: 2px 5px 7px;
+    text-align: center;
+    color: #000;
+}
