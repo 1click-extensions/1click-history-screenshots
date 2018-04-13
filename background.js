@@ -84,6 +84,9 @@ function tryToSaveTab(tab){
     if(chrome.runtime.getURL('pages/history.html') == tab.url){
       return;
     }
+    if( tab.url.indexOf('chrome://') === 0){
+      return;
+    }
     chrome.tabs.captureVisibleTab(null, {
       format : 'jpeg',
       quality : 10
@@ -138,7 +141,7 @@ delayedCall = null;
 
 
 chrome.history.onVisitRemoved.addListener(function(data){
-  console.log(data);
+  //console.log(data);
   if(data.allHistory){//remove all
     chrome.storage.local.set({'history': {}});
   }
