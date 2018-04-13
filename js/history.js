@@ -9,7 +9,7 @@ function addHistoryPart(data){
             data.title += '...';
         }
     }
-    var newPart = $('<a class="link" href="' + data.url + '"></a>');
+    var newPart = $('<a class="link" target="_blank" href="' + data.url + '"></a>');
     newPart.append('<div class="title">'+ data.title + '</div>');
     url = data.screenshot ? data.screenshot : chrome.runtime.getURL('images/example.png')
     if(url){
