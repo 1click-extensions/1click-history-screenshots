@@ -17,6 +17,12 @@
       "default_icon": "images/browseraction.png",
       "default_title": "__MSG_browser_action__"
       },
+      "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "js": ["js/script.js"]
+        }
+      ],
     "offline_enabled": true,
     "default_locale": "en",
     "icons": {

@@ -2,6 +2,13 @@ $('title').text(chrome.i18n.getMessage('page_title'));
 $('.h1-title').text(chrome.i18n.getMessage('h1_title'));
 function addHistoryPart(data){
     //console.log(data);
+    if(!data.title){
+        data.title = data.url;
+        data.title = data.title.substr(0,65);
+        if(data.title.length < data.url.length){
+            data.title += '...';
+        }
+    }
     var newPart = $('<a class="link" href="' + data.url + '"></a>');
     newPart.append('<div class="title">'+ data.title + '</div>');
     url = data.screenshot ? data.screenshot : chrome.runtime.getURL('images/example.png')
