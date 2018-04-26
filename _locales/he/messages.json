@@ -1,6 +1,10 @@
 {
   "page_title": {"message": "היסטוריה עם תמונות | תוספים בלחיצה אחת" },
   "h1_title": {"message": "היסטוריה עם תמונות" },
+  "localy": {"message": "תמונות האתרים וההיסטוריה נשמרים באופן מקומי" },
+  "no_history": {"message": "אין פריטים עדיין" },
+  "delete_text": {"message": "למחיקת ההיסטוריה השתמש" },
+  "delete_text_link": {"message": "בדף הזה" },
   "browser_action": {"message": "פתח היסטוריה" },
   "ext_desc": {"message": "ראה את כל ההיסטוריה שלך עם תמונות של האתר" },
   "ext_name": {"message": "היסטוריה עם תמונות בלחיצה אחת" }

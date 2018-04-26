@@ -164,10 +164,17 @@ chrome.browserAction.onClicked.addListener(function(tab){
 
 chrome.runtime.onMessage.addListener(
   function(request, sender, sendResponse) {
+    console.log(request);
     if(request.action){
         switch(request.action){
           case 'getHistory':
             chrome.tabs.create({"url" : request.url});  
+            break;
+        }
+        switch(request.action){
+          case 'openOriginHistory':
+          console.log(request.action);
+            chrome.tabs.create({'url': 'chrome://history'});
             break;
         }
     }

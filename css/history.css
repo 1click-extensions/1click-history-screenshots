@@ -4,7 +4,7 @@ a.link {
     border: 2px solid lightgray;
     padding: 7px;
     border-radius: 6px;
-    margin: 0 10px;
+    margin: 0 10px 10px;
 }
 a.link img{
     max-width: 100%;
@@ -16,4 +16,32 @@ a.link img{
     padding: 2px 5px 7px;
     text-align: center;
     color: #000;
+}
+.strip {
+    position: fixed;
+    background: #f5dada;
+    bottom: 0;
+    padding: 10px;
+    text-align: center;
+    width: 100vw;
+    border-top: 1px solid gray;
+}
+.strip > div{
+    display: inline-block;
+    padding: 0 30px;
+}
+#history-all-inner {
+    text-align: center;
+    font-size: 42px;
+    padding: 120px;
+}
+h1.h1-title {
+    font-size: 28px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.history-local {
+    background: url(/images/lock.svg) left 10px center no-repeat;
+    background-size: 15px;
 }
