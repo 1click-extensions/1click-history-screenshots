@@ -56,6 +56,7 @@ chrome.storage.local.get('history', function(data){
         if(count){
             $('#history-all-inner').hide();
         }
+        setTimeout(checkIfRankNeededAndAndAddRank,3550);
     });
     
 

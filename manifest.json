@@ -11,7 +11,7 @@
           "<all_urls>"
         ],
     "background": {
-      "scripts": ["background.js"],
+      "scripts": ["js/rank-listener.js","background.js"],
       "persistent": false
     },
     "browser_action":{
