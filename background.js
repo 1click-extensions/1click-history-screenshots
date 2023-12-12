@@ -71,7 +71,7 @@ function setDataPerUrl( url, imgData){
     else{
       data = data.history;
     }
-    urlTrimmed = url.split('?')[0];
+    urlTrimmed = url;//.split('?')[0];
     data[urlTrimmed] = imgData;
     chrome.storage.local.set({'history': data});
     //console.log(data);

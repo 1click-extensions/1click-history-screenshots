@@ -1,29 +1,42 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <title>History with Thumbnails</title>
-		<link href="/css/history.css" rel="stylesheet" type="text/css">
-    </head>
-    <body>
-        <h1 class="h1-title"></h1>
-		<div class="main">
-            <div id="history-all">
-                <div id="history-all-inner">
-                </div>
+
+<head>
+    <meta charset="utf-8">
+    <title>History with Thumbnails</title>
+    <!--link href="/css/history.css" rel="stylesheet" type="text/css"-->
+    <link id="theme-style" rel="stylesheet" href="/css/history-dark.css">
+</head>
+
+<body>
+    <h1 class="h1-title"></h1>
+    <div class="main">
+        <div id="history-all">
+            <div id="history-all-inner">
             </div>
-            <div class="strip">
-                <div class="history-local">Screenshots and sites history saved locally.</div>
-                |
-                <div class="history-go-to">
-                    <span class="history-go-to-text">To delete history use</span>
-                    <a class="history-go-to-link" href="#" >this page </a> 
-                </div>
+        </div>
+        <div class="strip">
+            <div class="history-local">Screenshots and sites history saved locally.</div>
+            |
+            <div class="history-go-to">
+                <span class="history-go-to-text">To delete history use</span>
+                <a class="history-go-to-link" href="#">this page </a>
             </div>
-	        <script src="/lib/jquery.js"></script>
-	        <script src="/js/extention-data.js"></script>
-	        <script src="/js/show-popup.js"></script>
-	        <script src="/js/history.js"></script>
-	    </div>
-    </body>
+            |
+            <!-- Rounded switch -->
+            <div>
+                <label class="switch">
+                    <input type="checkbox" id="themeSwitch">
+                    <span class="slider round"></span>
+                </label>
+                Enable Dark Theme
+            </div>
+        </div>
+        <script src="/lib/jquery.js"></script>
+        <script src="/js/extention-data.js"></script>
+        <script src="/js/show-popup.js"></script>
+        <script src="/js/history.js"></script>
+    </div>
+</body>
+
 </html>

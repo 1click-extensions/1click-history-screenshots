@@ -1,0 +1,115 @@
+body {
+    background-color: #2b2b2b;
+    color: #fff;
+}
+
+a.link {
+    display: inline-block;
+    width: 31%;
+    border: 2px solid #696969;
+    padding: 7px;
+    border-radius: 6px;
+    margin: 0 10px 10px;
+    color: #fff;
+}
+a.link img{
+    max-width: 100%;
+    height:auto;
+}
+
+.title {
+    font-size: 14px;
+    padding: 2px 5px 7px;
+    text-align: center;
+    color: #fff;
+}
+.strip {
+    position: fixed;
+    background: #696969;
+    bottom: 0;
+    padding: 10px;
+    text-align: center;
+    width: 100vw;
+    border-top: 1px solid #fff;
+}
+.strip > div{
+    display: inline-block;
+    padding: 0 30px;
+}
+#history-all-inner {
+    text-align: center;
+    font-size: 42px;
+    padding: 120px;
+}
+h1.h1-title {
+    font-size: 28px;
+    text-align: center;
+}
+
+.history-local {
+    background: url(/images/lock.svg) left 10px center no-repeat;
+    background-size: 15px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 17px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 17px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
