@@ -68,32 +68,25 @@ $('.history-go-to-link').click(function (e) {
     chrome.runtime.sendMessage({ action: "openOriginHistory" });
 });
 
-let themeSwitch = document.getElementById('themeSwitch');
-let themeStyle = document.getElementById('theme-style');
-
-themeSwitch.addEventListener('change', function () {
-    if (themeSwitch.checked) {
-        document.body.setAttribute('data-theme', 'dark');
+$('#themeSwitch').change(function () {
+    if ($(this).is(":checked")) {
         localStorage.setItem('theme', 'dark');
-        themeStyle.href = '/css/history-dark.css'; //set the href to the dark theme CSS file
+        $('#theme-style').attr('href', '/css/history-dark.css');
     } else {
-        document.body.setAttribute('data-theme', 'light');
         localStorage.setItem('theme', 'light');
-        themeStyle.href = '/css/history.css'; //set the href to the light theme CSS file
+        $('#theme-style').attr('href', '');
     }
 });
 
-
-document.addEventListener('DOMContentLoaded', (event) => {
+$(document).ready(function () {
     let theme = localStorage.getItem('theme');
     if (theme) {
-        document.body.setAttribute('data-theme', theme);
         if (theme === 'dark') {
-            themeSwitch.checked = true;
-            themeStyle.href = '/css/history-dark.css'; //set the href to the dark theme CSS file
+            $('#themeSwitch').prop('checked', true);
+            $('#theme-style').attr('href', '/css/history-dark.css');
         } else {
-            themeSwitch.checked = false;
-            themeStyle.href = '/css/history.css'; //set the href to the dark theme CSS file
+            $('#themeSwitch').prop('checked', false);
+            $('#theme-style').attr('href', '');
         }
     }
 });

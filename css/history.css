@@ -1,3 +1,8 @@
+body {
+    transition: .4s;
+    margin: 0;
+}
+
 a.link {
     display: inline-block;
     width: 31%;
@@ -21,10 +26,15 @@ a.link img{
     position: fixed;
     background: #f5dada;
     bottom: 0;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
     width: 100vw;
     border-top: 1px solid gray;
+
+    display: flex;
+    /*gap: 30px; *//* Adjust the spacing between elements */
+    align-items: center; 
+    justify-content: center;
 }
 .strip > div{
     display: inline-block;
@@ -38,7 +48,6 @@ a.link img{
 h1.h1-title {
     font-size: 28px;
     text-align: center;
-    padding-top: 20px;
 }
 
 .history-local {
@@ -50,8 +59,12 @@ h1.h1-title {
 .switch {
     position: relative;
     display: inline-block;
+    box-sizing: border-box;
     width: 30px;
     height: 17px;
+    margin-right: 6px;
+    margin-left: 6px;
+    margin-top: -2px;
 }
 
 /* Hide default HTML checkbox */
