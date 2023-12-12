@@ -34,7 +34,7 @@ chrome.storage.local.get('history', function (data) {
         var count = 0;
 
         $.each(history, function (id, historyPart) {
-            urlTrimmed = historyPart.url;//.split('?')[0];
+            urlTrimmed = historyPart.url.split('?')[0];
             if (chrome.runtime.getURL('pages/history.html') == urlTrimmed) {
                 return;
             }
